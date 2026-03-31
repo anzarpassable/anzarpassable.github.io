@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supreme TSC - IT Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <script src="dropdown.js"></script>
 </head>
 <body>
     <div class="container">
@@ -24,22 +28,170 @@
                     <div class="dropdown">
                         <button class="dropbtn">Our Product Categories</button>
                         <div class="dropdown-content">
-                            <a href="#laptops">Laptops</a>
-                            <a href="#workstations">Workstations</a>
-                            <a href="#servers">Servers</a>
-                            <a href="#hard-drives">Hard Drives</a>
-                            <a href="#memory">Memory</a>
-                            <a href="#processors">Processors</a>
-                            <a href="#networking-switches">Networking Switches</a>
-                            <a href="#routers">Routers</a>
-                            <a href="#ip-phones">IP Phones</a>
-                            <a href="#softwares-licenses">Softwares & Licenses</a>
-                            <a href="#sfp-modules">SFP Modules</a>
-                            <a href="#power-supplies">Power Supplies</a>
-                            <a href="#storage-backup">Storage & Backup Devices</a>
-                            <a href="#network-cards">Network Cards</a>
-                            <a href="#cables">Cables</a>
-                            <a href="#cameras">Cameras</a>
+                            <div class="dropdown-menu">
+                                <a href="#laptops" data-category="laptops">Laptops</a>
+                                <a href="#workstations" data-category="workstations">Workstations</a>
+                                <a href="#servers" data-category="servers">Servers</a>
+                                <a href="#hard-drives" data-category="hard-drives">Hard Drives</a>
+                                <a href="#memory" data-category="memory">Memory</a>
+                                <a href="#processors" data-category="processors">Processors</a>
+                                <a href="#networking-switches" data-category="networking">Networking Switches</a>
+                                <a href="#routers" data-category="routers">Routers</a>
+                                <a href="#ip-phones" data-category="phones">IP Phones</a>
+                                <a href="#softwares-licenses" data-category="software">Softwares & Licenses</a>
+                                <a href="#sfp-modules" data-category="sfp">SFP Modules</a>
+                                <a href="#power-supplies" data-category="power">Power Supplies</a>
+                                <a href="#storage-backup" data-category="storage">Storage & Backup Devices</a>
+                                <a href="#network-cards" data-category="cards">Network Cards</a>
+                                <a href="#cables" data-category="cables">Cables</a>
+                                <a href="#cameras" data-category="cameras">Cameras</a>
+                            </div>
+                            <div class="dropdown-preview">
+                                <div class="preview-content" data-category="laptops">
+                                    <h4>Laptops</h4>
+                                    <ul>
+                                        <li>Dell Latitude Series</li>
+                                        <li>HPE EliteBook</li>
+                                        <li>Business Ultrabooks</li>
+                                        <li>Gaming Laptops</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="workstations">
+                                    <h4>Workstations</h4>
+                                    <ul>
+                                        <li>HPE Z Series</li>
+                                        <li>Dell Precision</li>
+                                        <li>CAD Workstations</li>
+                                        <li>Engineering Stations</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="servers">
+                                    <h4>Servers</h4>
+                                    <ul>
+                                        <li>HPE ProLiant</li>
+                                        <li>Dell PowerEdge</li>
+                                        <li>Rack Servers</li>
+                                        <li>Blade Servers</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="hard-drives">
+                                    <h4>Hard Drives</h4>
+                                    <ul>
+                                        <li>SSD Drives</li>
+                                        <li>HDD Storage</li>
+                                        <li>NVMe Drives</li>
+                                        <li>Enterprise Storage</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="memory">
+                                    <h4>Memory</h4>
+                                    <ul>
+                                        <li>DDR4 RAM</li>
+                                        <li>DDR5 Modules</li>
+                                        <li>ECC Memory</li>
+                                        <li>Server Memory</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="processors">
+                                    <h4>Processors</h4>
+                                    <ul>
+                                        <li>Intel Xeon</li>
+                                        <li>AMD EPYC</li>
+                                        <li>Desktop CPUs</li>
+                                        <li>Server Processors</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="networking">
+                                    <h4>Networking Switches</h4>
+                                    <ul>
+                                        <li>Cisco Catalyst</li>
+                                        <li>HPE Aruba</li>
+                                        <li>Managed Switches</li>
+                                        <li>PoE Switches</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="routers">
+                                    <h4>Routers</h4>
+                                    <ul>
+                                        <li>Cisco ISR Series</li>
+                                        <li>HPE Routers</li>
+                                        <li>Enterprise Routers</li>
+                                        <li>Wireless Routers</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="phones">
+                                    <h4>IP Phones</h4>
+                                    <ul>
+                                        <li>Cisco IP Phones</li>
+                                        <li>HPE Poly</li>
+                                        <li>VoIP Phones</li>
+                                        <li>Conference Phones</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="software">
+                                    <h4>Softwares & Licenses</h4>
+                                    <ul>
+                                        <li>Microsoft Licenses</li>
+                                        <li>Antivirus Software</li>
+                                        <li>Productivity Suites</li>
+                                        <li>Specialized Applications</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="sfp">
+                                    <h4>SFP Modules</h4>
+                                    <ul>
+                                        <li>10G SFP+</li>
+                                        <li>25G SFP28</li>
+                                        <li>40G QSFP+</li>
+                                        <li>100G QSFP28</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="power">
+                                    <h4>Power Supplies</h4>
+                                    <ul>
+                                        <li>Server PSUs</li>
+                                        <li>Redundant Power</li>
+                                        <li>Modular Supplies</li>
+                                        <li>UPS Systems</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="storage">
+                                    <h4>Storage & Backup</h4>
+                                    <ul>
+                                        <li>NAS Systems</li>
+                                        <li>SAN Storage</li>
+                                        <li>Backup Solutions</li>
+                                        <li>Cloud Storage</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="cards">
+                                    <h4>Network Cards</h4>
+                                    <ul>
+                                        <li>Ethernet Cards</li>
+                                        <li>Fiber Cards</li>
+                                        <li>Wireless Adapters</li>
+                                        <li>10G Network Cards</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="cables">
+                                    <h4>Cables</h4>
+                                    <ul>
+                                        <li>Ethernet Cables</li>
+                                        <li>Fiber Optic Cables</li>
+                                        <li>USB Cables</li>
+                                        <li>Power Cables</li>
+                                    </ul>
+                                </div>
+                                <div class="preview-content" data-category="cameras">
+                                    <h4>Cameras</h4>
+                                    <ul>
+                                        <li>Security Cameras</li>
+                                        <li>IP Cameras</li>
+                                        <li>PTZ Cameras</li>
+                                        <li>Surveillance Systems</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -52,11 +204,10 @@
                 </div>
             </div>
         </header>
-
         <section class="hero" id="home">
             <div class="hero-text">
-                <h1>IT hardware and software solutions that scale with your business needs</h1>
-                <p>Modernize your IT infrastructure with STSC.  We are specialized in enterprise IT hardware offerings with a range of products including laptops, workstations, servers, hard drives, memory, processors, networking switches, routers, IP phones, softwares, licenses, SFP modules, power supplies, Storage and Backup Devices, Network Cards, Cables, cameras, and various other networking products. We partner with global manufacturers and provide logistics support across the Kingdom of Saudi Arabia.</p>
+                <h1>IT Hardware and Software solutions that scale with your business needs</h1>
+                <p>Modernize your IT infrastructure with STSC. We are specialized in enterprise IT hardware offerings with a range of products including laptops, workstations, servers, hard drives, memory, processors, networking switches, routers, IP phones, softwares, licenses, SFP modules, power supplies, Storage and Backup Devices, Network Cards, Cables, cameras, and various other networking products. Our AI-powered solutions help businesses leverage intelligent automation and data-driven insights. We partner with global manufacturers and provide logistics support across the Kingdom of Saudi Arabia.</p>
                 <div class="cta-group">
                     <a class="btn btn-primary" href="contact.html">Get a Free Consultation</a>
                     <a class="btn btn-secondary" href="#services">View Services</a>
@@ -66,10 +217,9 @@
                 <img src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="IT Solutions" style="width:100%; height:100%; object-fit:cover; border-radius: 1rem; border: 1px solid rgba(255,255,255,.12); box-shadow: var(--shadow);">
             </div>
         </section>
-
         <div class="features">
             <article class="feature-card">
-                <h3>HP and Dell Servers</h3>
+                <h3>HPE and Dell Servers</h3>
                 <ul>
                     <li>Hard Drives</li>
                     <li>Memory</li>
@@ -80,8 +230,11 @@
                 <h3>Managed IT</h3>
                 <p>Hybrid IT support, network design, and helpdesk services that keep your teams productive.</p>
             </article>
+            <article class="feature-card">
+                <h3>AI Solutions</h3>
+                <p>Intelligent automation, machine learning platforms, and AI-powered analytics to transform your business operations and decision-making processes.</p>
+            </article>
         </div>
-
         <section class="brands-section section">
             <h2 style = "text-align: center;">Brands We Supply</h2>
             <div class="brands-carousel">
@@ -89,7 +242,7 @@
                     <img src="assets/images/logos/cisco.png" alt="Cisco">
                     <img src="assets/images/logos/dell.png" alt="Dell">
                     <img src="assets/images/logos/fujitsu.png" alt="Fujitsu">
-                    <img src="assets/images/logos/hp.svg" alt="HP">
+                    <img src="assets/images/logos/hp.svg" alt="HPE">
                     <img src="assets/images/logos/huawei.svg" alt="Huawei">
                     <img src="assets/images/logos/jabra.png" alt="Jabra">
                     <img src="assets/images/logos/samsung.png" alt="Samsung">
@@ -97,7 +250,7 @@
                     <img src="assets/images/logos/cisco.png" alt="Cisco">
                     <img src="assets/images/logos/dell.png" alt="Dell">
                     <img src="assets/images/logos/fujitsu.png" alt="Fujitsu">
-                    <img src="assets/images/logos/hp.svg" alt="HP">
+                    <img src="assets/images/logos/hp.svg" alt="HPE">
                     <img src="assets/images/logos/huawei.svg" alt="Huawei">
                     <img src="assets/images/logos/jabra.png" alt="Jabra">
                     <img src="assets/images/logos/samsung.png" alt="Samsung">
@@ -105,7 +258,6 @@
                 </div>
             </div>
         </section>
-
         <section id="services" class="section">
             <h2>What we do</h2>
             <div class="services-grid">
@@ -119,22 +271,14 @@
                 </div>
                 <div class="service">
                     <h4>Security & Compliance</h4>
-                    <p>Zero trust implementation, security posture management, and GDPR/ISO alignment.</p>
+                    <p>AI-enhanced zero trust implementation, intelligent threat detection, security posture management, and GDPR/ISO alignment.</p>
                 </div>
                 <div class="service">
                     <h4>Support & Outsourcing</h4>
-                    <p>Managed IT services from a dedicated team with SLAs built for uptime and performance.</p>
+                    <p>Managed IT services from a dedicated team with AI-powered monitoring, predictive maintenance, and SLAs built for uptime and performance.</p>
                 </div>
             </div>
         </section>
-        <!-- <footer class="footer">
-            <div>© 2026 Supreme TSC · All rights reserved</div>
-            <div class="social-links">
-                <span class="social-pill">LinkedIn</span>
-                <span class="social-pill">Twitter</span>
-                <span class="social-pill">GitHub</span>
-            </div>
-        </footer> -->
     </div>
 </body>
 </html>
