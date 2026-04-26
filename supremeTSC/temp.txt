@@ -1,0 +1,6 @@
+- change logo
+- change heading color to green
+- no individuals, obly businesses
+- hardware, software, network, security industry
+- move sw & hw solutions below networking sol
+-swap vidco amd hp

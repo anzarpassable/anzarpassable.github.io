@@ -27,4 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Location cards are now fully responsive without need for expansion logic
 });
