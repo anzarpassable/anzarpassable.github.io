@@ -39,6 +39,22 @@ a { color: inherit; text-decoration: none; }
     background-position: center;
     background-attachment: fixed;
     width: 100vw;
+    height: 60vh;
+    margin-left: calc((100vw - 100%) / -2);
+    margin-top: -2rem;
+}
+.topnav-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    background-image: url('assets/images/cities/riyadh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
     margin-left: calc((100vw - 100%) / -2);
     margin-top: -2rem;
 }
@@ -272,7 +288,7 @@ a { color: inherit; text-decoration: none; }
 }
 .marquee-track {
     display: flex;
-    animation: marquee-scroll 40s linear infinite;
+    animation: marquee-scroll 10s linear infinite;
     gap: 1.5rem;
     padding: 0 1.5rem;
 }
@@ -310,7 +326,7 @@ a { color: inherit; text-decoration: none; }
 }
 .brands-track {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 .brands-track img {
     width: 200px;
